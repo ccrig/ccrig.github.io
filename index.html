@@ -72,6 +72,11 @@
     ga('send', 'pageview');
 </script>
 
+<!-- using GIF onclick from https://www.hongkiat.com/blog/on-click-animated-gif/ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+
 </head>
 <body>
 <div id="primarycontent">
@@ -86,6 +91,7 @@
         <a href="">Vitchyr Pong</a>,
         <a href="">Glen Berseth</a>,
         <a href="http://homes.cs.washington.edu/~svlevine/">Sergey Levine</a></h4></li>
+  <li>University of California, Berkeley</li>
   <li>*Equal Contribution</li>
 </ul>
 </center>
@@ -130,7 +136,9 @@ While reinforcement learning provides an appealing formalism for learning indivi
     </p>
     <p>
       <center>
-        <img src="img/robot_test.gif" height="140px" />
+        <figure>
+          <img src="img/robot_test.png" height="140px" alt="" data-alt="img/robot_test.gif">
+        </figure>
       </center>
     </p>
   </div>
@@ -140,7 +148,9 @@ While reinforcement learning provides an appealing formalism for learning indivi
     </p>
     <p>
       <center>
-        <img src="img/robot_test.gif" height="140px" />
+        <figure>
+          <img src="img/robot_test.png" height="140px" alt="" data-alt="img/robot_test.gif">
+        </figure>
       </center>
     </p>
   </div>
@@ -160,6 +170,72 @@ While reinforcement learning provides an appealing formalism for learning indivi
   </center>
 </p>
 
+<h3 style="clear:both">Simulation Environments</h3>
+<div class="row">
+  <div class="column">
+    <p>
+      <center>
+        <b>Training Time</b>
+      </center>
+    </p>
+  </div>
+  <div class="column">
+    <p>
+      <center>
+        <b>Test Time</b>
+      </center>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <p>
+      <center>
+        <!--iframe width="380" src="https://www.youtube.com/embed/8dgBH7OISlU?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+        <!-- <img src="img/pusher_train.gif" width="350px" /> -->
+        <figure>
+          <img src="img/pusher_train.png" width="350px" alt="" data-alt="img/pusher_train.gif">
+        </figure>
+      </center>
+    </p>
+  </div>
+  <div class="column">
+    <p>
+      <center>
+        <!--iframe width="380" src="https://www.youtube.com/embed/-5nmpNMKlis?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+        <!-- <img src="img/pusher_test.gif" width="350px" /> -->
+        <figure>
+          <img src="img/pusher_test.png" width="350px" alt="" data-alt="img/pusher_test.gif">
+        </figure>
+      </center>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <p>
+      <center>
+        <!--iframe width="380" src="https://www.youtube.com/embed/eMtM5EKmBXg?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+        <!-- <img src="img/pointmass_train.gif" width="350px" /> -->
+        <figure>
+          <img src="img/pointmass_train.png" width="350px" alt="" data-alt="img/pointmass_train.gif">
+        </figure>
+      </center>
+    </p>
+  </div>
+  <div class="column">
+    <p>
+      <center>
+        <!--iframe width="380" src="https://www.youtube.com/embed/CmvfjyuBf-4?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+        <!-- <img src="img/pointmass_test.gif" width="350px" /> -->
+        <figure>
+          <img src="img/pointmass_test.png" width="350px" alt="" data-alt="img/pointmass_test.gif">
+        </figure>
+      </center>
+    </p>
+  </div>
+</div>
+
 <h3 style="clear:both">Code</h3>
 <p style="padding-left: 10px; padding-right: 10px;">
 The visually diverse environments are available at <a href="https://github.com/vitchyr/multiworld">github.com/vitchyr/multiworld</a>. The algorithm code is to be released soon!
@@ -169,6 +245,13 @@ The visually diverse environments are available at <a href="https://github.com/v
 <p style="padding-left: 10px; padding-right: 10px;">
 Preprint can be accessed on <a href="https://arxiv.org/abs/1906.05841">arXiv</a>.
 </p>
+
+<h3 style="clear:both">Citation</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+Preprint can be accessed on <a href="https://arxiv.org/abs/1906.05841">arXiv</a>.
+</p>
+
+<script src="js/script-min.js"></script>
 
 
 <!-- <h3 style="clear:both">Website Template</h3>
