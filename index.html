@@ -101,10 +101,10 @@
 While reinforcement learning provides an appealing formalism for learning individual skills, a general-purpose robotic system must be able to master an extensive repertoire of behaviors. Instead of learning a large collection of skills individually, can we instead enable a robot to propose and practice its own behaviors automatically, learning about the affordances and behaviors that it can perform in its environment, such that it can then repurpose this knowledge once a new task is commanded by the user? In this paper, we study this question in the context of self-supervised goal-conditioned reinforcement learning. A central challenge in this learning regime is the problem of goal setting: in order to practice useful skills, the robot must be able to autonomously set goals that are feasible but diverse. When the robot's environment and available objects vary, as they do in most open-world settings, the robot must propose to itself only those goals that it can accomplish in its present setting with the objects that are at hand. Previous work only studies self-supervised goal-conditioned RL in a single-environment setting, where goal proposals come from the robot's past experience or a generative model are sufficient. In more diverse settings, this frequently leads to impossible goals and, as we show experimentally, prevents effective learning. We propose a conditional goal-setting model that aims to propose goals that are feasible from the robot's current state. We demonstrate that this enables self-supervised goal-conditioned off-policy learning with raw image observations in the real world, enabling a robot to manipulate a variety of objects and generalize to new objects that were not seen during training.
 </p>
 
-<!--h3 style="clear:both">Preprint</h3>
+<h3 style="clear:both">Paper</h3>
 <p style="padding-left: 10px; padding-right: 10px;">
-  Preprint can be found <a href="https://arxiv.org/abs/1812.03201">here</a>.
-</p><-->
+Preprint can be accessed on <a href="https://arxiv.org/abs/1906.05841">arXiv</a>.
+</p>
 
 <h3 style="clear:both">Method</h3>
 <div class="row">
@@ -137,8 +137,9 @@ While reinforcement learning provides an appealing formalism for learning indivi
     <p>
       <center>
         <!-- <figure> -->
-          <img src="img/robot_test.png" height="140px">
+          <!-- <img src="img/robot_test.png" height="140px"> -->
         <!-- </figure> -->
+        <iframe width="380" height="300" src="https://www.youtube.com/embed/EnTiwiX8Xz8?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </center>
     </p>
   </div>
@@ -149,8 +150,9 @@ While reinforcement learning provides an appealing formalism for learning indivi
     <p>
       <center>
         <!-- <figure> -->
-          <img src="img/robot_test.png" height="140px">
+          <!-- <img src="img/robot_test.png" height="140px"> -->
         <!-- </figure> -->
+        <iframe width="380" height="300" src="https://www.youtube.com/embed/tb1C4JYqorQ?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </center>
     </p>
   </div>
@@ -166,7 +168,7 @@ While reinforcement learning provides an appealing formalism for learning indivi
 <p style="padding-left: 10px; padding-right: 10px;">
   <center>
     <!-- <iframe src="https://drive.google.com/file/d/1Wj4oqLVLk2Lix2IGD0yP5avBKZGIZMfg/preview" width="640" height="480"></iframe> -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/t37YS7XA6VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cqp_phACou0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </center>
 </p>
 
@@ -215,7 +217,7 @@ While reinforcement learning provides an appealing formalism for learning indivi
   </div>
 </div>
 <p>
-  <b>Multi-Color 2D Navigation</b>: the agent controls a pointmass and must reach a target position indicated by a goal image. The color of the pointmass changes to a random RGB value and the walls change to one of 15 orientations at the start of every rollout.
+  <b>Multi-Color 2D Navigation</b>: the agent controls a pointmass and must reach a target position indicated by a goal image, while navigating around the walls. The color of the pointmass changes to a random RGB value and the walls change to one of 15 orientations at the start of every rollout.
 </p>
 <div class="row">
   <div class="column">
@@ -260,17 +262,19 @@ While reinforcement learning provides an appealing formalism for learning indivi
 
 <h3 style="clear:both">Code</h3>
 <p style="padding-left: 10px; padding-right: 10px;">
-The visually diverse environments are available at <a href="https://github.com/vitchyr/multiworld">github.com/vitchyr/multiworld</a>. The algorithm code is to be released soon!
-</p>
-
-<h3 style="clear:both">Preprint</h3>
-<p style="padding-left: 10px; padding-right: 10px;">
-Preprint can be accessed on <a href="https://arxiv.org/abs/1906.05841">arXiv</a>.
+The visually diverse environments are available at <a href="https://github.com/vitchyr/multiworld">github.com/vitchyr/multiworld</a>. Algorithm code to be released soon!
 </p>
 
 <h3 style="clear:both">Citation</h3>
 <p style="padding-left: 10px; padding-right: 10px;">
-Preprint can be accessed on <a href="https://arxiv.org/abs/1906.05841">arXiv</a>.
+<code>
+  @inproceedings{nair19ccrig, <br />
+&nbsp;&nbsp;&nbsp;&nbsp;author&nbsp;&nbsp;&nbsp;&nbsp;= {A. Nair and S. Bahl and A. Khazatsky and V. Pong and G. Berseth and S. Levine}, <br />
+&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {Contextual Imagined Goals for Self-Supervised Robotic Learning}, <br />
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle&nbsp;= {Conference on Robot Learning (CoRL)}, <br />
+&nbsp;&nbsp;&nbsp;&nbsp;year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {2019} <br />
+  }
+</code>
 </p>
 
 <script src="js/script-min.js"></script>
